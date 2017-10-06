@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>文章</title>
+    <link rel="icon" href="../assets/image/favicon.ico" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/blog/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/blog/css/clean-blog.css" rel="stylesheet">
+    <link href="../assets/blog/css/top.css" rel="stylesheet">
+    <link href="../assets/blog/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+<!--Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/blog/index">文章列表</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right" style="color: black;">
+                <li>
+                    <a href="/blog/about" class="nav-about">自我介绍(todo)</a>
+                </li>
+                <!-- <li>
+                    <a href="/blog/post.html">Sample Post</a>
+                </li> -->
+                <li>
+                    <a href="/blog/contact" class="nav-contract">联系方式(todo)</a>
+                </li>
+                <li class="nav-logout-display">
+                    <!-- only master -->
+                    <a href="#!" class="nav-logout">退出(todo)</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!--Page Header -->
+<!-- Set your background image for this header on the line below. -->
+
+<header class="intro-header" >
+  <!-- <header class="intro-header"> -->
+    <div class="jumbotron post-heading">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="post-title">loading...</h1>
+                <h2 id="post-introduction">loading...</h2>
+                <span class="meta"><a class="author-home-page" href="#!">Pen Name</a> 发布于 <span id="post-issue-time">August 24, 2014</span></span>
+            </div>
+        </div>
+      </div>
+    </div>
+</header>
+
+    <div class="container">
+        <!--<textarea>-->
+        <div class="row">
+            <div class="col-md-8" id="post-body">
+                loading...
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container" id="btngp-edit-delete" style="margin-top: 40px; display:none;">
+        <div class="row">
+            <button type="button" class="btn btn-primary col-xs-4" data-toggle="modal" data-target="#popup-post-edit" data-whatever="@@mdo">编辑</button>
+            <!--public as warning, private as info-->
+            <button type="button" class="btn col-xs-4" id="btn-share-post" data-toggle="modal" data-target="#popup-post-access" data-is-public="true" data-whatever="@@mdo">公开化/私有化</button>
+            <button type="button" class="btn btn-danger col-xs-4" id="btn-delete-post">删除</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; ScalaChan 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="popup-post-edit" tabindex="-1" role="dialog" aria-labelledby="popup-post-edit-label">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="popup-post-edit-label">Edit</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="message-text" class="control-label">Message</label>
+                            <textarea class="form-control input-lg" id="message-text" rows="15"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="btn-save-blog">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="popup-post-access" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">Status</h4>
+                    <p id="access-tips">当前帖子是公开状态,访问链接为... / 当前帖子为私有状态,是否开放链接?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="btn-post-access-modify">关闭链接/打开链接</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">了解</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../assets/lib/jquery-2.2.3.min.js"></script>
+    <script src="../assets/lib/common.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <!--<script src="/assets/blog/js/bootstrap.min.js"></script>-->
+    <script src="../assets/blog/js/bootstrap.min.js"></script>
+    <script src="../assets/lib/showdown.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="../assets/blog/js/clean-blog.min.js"></script>
+    <script src="../assets/blog/js/util.js"></script>
+    <script src="../assets/blog/js/post.js"></script>
+    <script src="../assets/blog/js/access.js"></script>
+</body>
+
+</html>

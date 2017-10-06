@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="./assets/image/favicon.ico" rel="stylesheet">
+
+        <!--<link rel="icon" href="image/favicon.ico">-->
+
+        <title>登录 - Clean Blog </title>
+
+        <!-- Bootstrap CSS -->
+        <link href="./assets/blog/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="./assets/login/signin.css" rel="stylesheet">
+        <link href="./assets/login/css/login.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#tab-signin">登录</a></li>
+                <li><a data-toggle="tab" href="#tab-register">注册</a></li>
+                <li><a data-toggle="tab" href="#tab-feedback">反馈</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="form-signin tab-pane fade in active" id="tab-signin">
+                  <form>
+                    <h2 class="form-signin-heading">请登录</h2>
+                    <label for="inputEmail" class="sr-only">用户名/邮箱</label>
+                    <input type="" id="inputEmail" name="account" class="form-control" placeholder="用户名/邮箱" required="" autofocus="">
+                    <label for="inputPassword" class="sr-only">密码</label>
+                    <input type="password" id="inputPassword" name="password" class="form-control" placeholder="密码" required="">
+                    <p class="tip indent" id="signin-tip"></p>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="remember-me" id="remember-me"> 记住账号和密码
+                        </label>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block ajax-btn-verify" type="submit">登 录</button>
+                    <!--<input class="btn btn-lg btn-primary btn-block" type="submit" value="Sign in" />-->
+                  </form>
+                </div>
+                <!--<div id="home" class="tab-pane fade in active">-->
+                    <!--<h3>HOME</h3>-->
+                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
+                <!--</div>-->
+                <div id="tab-register" class="tab-pane fade" class="row">
+                    <div class="col-sm-6" style="max-width:400px">
+                        <h2 class="form-signin-heading">注册</h2>
+                            <!--email-->
+                        <p>
+                          <div class="row">
+                              <div class="col-sm-7">
+                                  <label for="inputEmail" class="sr-only">邮箱地址</label>
+                                  <input type="" id="inputEmail-register" name="account" class="form-control" placeholder="邮箱地址" required="" autofocus="">
+                              </div>
+                              <div class="col-sm-5 register-email">
+                                  <button class="btn btn-lg btn-primary btn-block" id="btn-register-email" type="submit">获取邀请码</button>
+                              </div>
+                          </div>
+                        </p>
+                        <!--invitation code-->
+                        <p>
+                            <label for="inputPassword" class="sr-only">邀请码</label>
+                            <input type="" id="inputInvitationCode-register" class="form-control" placeholder="邀请码" required="">
+                        </p>
+                            <!--username-->
+                        <!--<label for="inputEmail" class="sr-only">Email address</label>-->
+                        <p>
+                            <input type="" id="inputUsername-register" name="account" class="form-control" placeholder="用户名" required="">
+                        </p>
+                            <!--phone-->
+                        <!--<label for="inputEmail" class="sr-only">Email address</label>-->
+                        <!--<input type="" id="inputPhone-register" name="account" class="form-control" placeholder="Phone" required="">-->
+                        <!--pen_name-->
+                        <!--<label for="inputEmail" class="sr-only">Email address</label>-->
+                        <p>
+                            <input type="" id="inputPenname-register" name="account" class="form-control" placeholder="笔名" required="">
+                        </p>
+                            <!--password-->
+                        <p>
+                            <label for="inputPassword" class="sr-only">Password</label>
+                            <input type="password" id="inputPassword-reigster" name="password" class="form-control" placeholder="密码" required="">
+                        </p>
+                            <!--ensure password-->
+                        <p>
+                            <label for="inputPassword" class="sr-only">Password</label>
+                            <input type="password" id="inputPassword-ensure-reigster" name="password" class="form-control" placeholder="确认密码" required="">
+                        </p>
+                        <div class="alert alert-danger fade in" style="display:none;" role="alert">
+                            <button type="button" class="close" onclick="$('.alert').hide()" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+
+                            <span class="sr-only">Error:</span>
+                            <span class="alert-content">Enter a valid email address</span>
+
+                        </div>
+
+                        <button class="btn btn-lg btn-primary btn-block" id="btn-register" type="submit">注册</button>
+                    </div>
+                </div>
+                <div id="tab-feedback" class="tab-pane fade">
+                    <h2>请发送邮件至</h2>
+                    <p>lorance7016@163.com</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="./assets/lib/jquery-2.2.3.min.js"></script>
+    <script src="http://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+    <script src="./assets/blog/js/bootstrap.min.js"></script>
+    <script src="./assets/lib/common.js"></script>
+    <script src="./assets/login/js/login.js"></script>
+
+</html>

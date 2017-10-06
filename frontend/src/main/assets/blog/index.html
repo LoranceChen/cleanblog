@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+      <title>Clean Blog</title>
+      <link rel="icon" href="../assets/image/favicon.ico" rel="stylesheet">
+      <link href="../assets/blog/css/bootstrap.min.css" rel="stylesheet">
+      <link href="../assets/blog/css/clean-blog.min.css" rel="stylesheet">
+      <link href="../assets/blog/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+      <!-- Navigation -->
+      <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+          <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header page-scroll">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <!-- 1. 本人 “欢迎，LoranceChen” - index 2. 客人 "我的空间" - index -->
+                  <a class="navbar-brand greet" href="/blog/index"></a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                      <!-- 1. 本人 index, 2.客人 index?id=.... -->
+                      <!-- <li>
+                          <a href="/blog/index">主页</a>
+                      </li> -->
+                      <li>
+                          <!-- 1. 本人 "关于我" - about, 2.客人 "关于作者" - ?userId=... -->
+                          <a href="/blog/about" class="nav-about">关于我/作者(todo)</a>
+                      </li>
+                      <li>
+                          <!-- 1. 本人 - contact, 2.客人 - contact?userId=... -->
+                          <a href="/blog/contact" class="nav-contact">联系方式(todo)</a>
+                      </li>
+                      <li>
+                          <!-- only master -->
+                          <a href="#!" class="nav-logout">退出(todo)</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+      <header class="intro-header" style="background-image: url('../assets/blog/img/home-bg.jpg')">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                      <div class="site-heading">
+                          <h1>Clean Blog</h1>
+                          <hr class="small">
+                          <span class="subheading">be with you</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header>
+
+      <!-- Main Content -->
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 posts-preview">
+                  <div class = "post-preview-content">
+                      <div class="post-preview-template">
+                          <!--<div class="post-preview">-->
+                              <!--<a href="/blog/post">-->
+                                  <!--<h2 class="post-title">-->
+                                      <!--Man must explore, and this is exploration at its greatest-->
+                                  <!--</h2>-->
+                                  <!--<h3 class="post-subtitle">-->
+                                      <!--Problems look mighty small from 150 miles up-->
+                                  <!--</h3>-->
+                              <!--</a>-->
+                              <!--<p class="post-meta">Posted on September <i class="post-time">24, 2014</i></p>-->
+                              <!--&lt;!&ndash;<p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>&ndash;&gt;-->
+                          <!--</div>-->
+                          <!--<hr>-->
+                      </div>
+                  </div>
+                  <!-- Pager -->
+                  <div class="row">
+                     <!-- todo filter -->
+                      <!-- <div class="col-xs-4 btn-group dropup">
+                          <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Class <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu">
+                              <li><a href="#!">Adds</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#!">Technology</a></li>
+                              <li><a href="#!">Lives</a></li>
+                              <li><a href="#!">Daily Note</a></li>
+                          </ul>
+                      </div> -->
+                      <!--<div class="col-xs-4">-->
+                      <button type="button" class="col-xs-6 btn btn-info" data-toggle="modal" id="btn-create-blog">创建</button>
+                      <!--</div>-->
+                      <!--<div class="col-sm-4">-->
+                      <button type="button" class="col-xs-6 btn btn-primary btn-next-blog" autocomplete="off">更多文章 &rarr;</button>
+                      <!--</div>-->
+                  <!--</ul>-->
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                      <ul class="list-inline text-center">
+                          <li>
+                              <a href="#!">
+                                  <span class="fa-stack fa-lg">
+                                      <i class="fa fa-circle fa-stack-2x"></i>
+                                      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                  </span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#!">
+                                  <span class="fa-stack fa-lg">
+                                      <i class="fa fa-circle fa-stack-2x"></i>
+                                      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                  </span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#!">
+                                  <span class="fa-stack fa-lg">
+                                      <i class="fa fa-circle fa-stack-2x"></i>
+                                      <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                  </span>
+                              </a>
+                          </li>
+                      </ul>
+                      <p class="copyright text-muted">Copyright &copy; ScalaChan 2016</p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+
+      <!--cmd window-->
+      <div class="modal fade" id="cmd-pop-window" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+                  </div>
+                  <div class="modal-body">
+                      <form>
+                          <div class="form-group">
+                              <label for="message-text" class="control-label">Message:</label>
+                              <textarea class="form-control input-lg" id="message-text" rows="15"></textarea>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary" id="btn-save-blog">Save</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <script src="../assets/lib/jquery-2.2.3.min.js"></script>
+      <script src="../assets/blog/js/bootstrap.min.js"></script>
+      <script src="../assets/lib/rx.all.js"></script>
+      <!-- Custom Theme JavaScript -->
+      <script src="../assets/lib/common.js"></script>
+      <script src="../assets/blog/js/clean-blog.min.js"></script>
+      <script src="../assets/blog/js/index.js"></script>
+      <script src="../assets/blog/js/cmd.js"></script>
+
+  </body>
+
+</html>
