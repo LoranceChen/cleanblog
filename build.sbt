@@ -24,7 +24,7 @@ def crossLibs(configuration: Configuration) =
   libraryDependencies ++= crossDeps.value.map(_ % configuration)
 
 lazy val blogchan3 = project.in(file("."))
-//  .aggregate(sharedJS, sharedJVM, frontend, backend)
+  .aggregate(sharedJS, sharedJVM, frontend, backend)
   .dependsOn(backend)
   .settings(
     publishArtifact := false,
