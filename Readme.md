@@ -7,7 +7,8 @@ A blog community for write yourself.
 3. Bootstrap web UI framework
 
 ## How to deploy
-`sbt frontend/compile backend/assembly`
+1. package: `sbt frontend/compile backend/assembly`
+2. run: `java -jar path/xxx.jar`
 
 ## How to develop
 1. open one sbt window with `sbt ~frontend/compile` which auto compile frontend code if changed
