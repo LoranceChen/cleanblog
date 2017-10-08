@@ -51,13 +51,7 @@ lazy val backend = (project in file("backend"))
   .dependsOn(sharedJVM)
   .settings(
     libraryDependencies ++= backendDeps.value,
-    crossLibs(Compile),
-
-    mappings in (Compile, packageBin) ++= {
-      ((target in (Compile)).value / StaticFilesDir).***.get map { file =>
-        file -> file.getAbsolutePath.stripPrefix((target in Compile).value.getAbsolutePath)
-      }
-    }
+    crossLibs(Compile)
   )
 
 lazy val frontend = (project in file("./frontend")).enablePlugins(ScalaJSPlugin).
